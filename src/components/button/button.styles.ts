@@ -29,6 +29,11 @@ const styles = {
   // },
 };
 
-const { classes } = jss.createStyleSheet(styles).attach();
+const { classes } = jss
+  .createStyleSheet(styles, {
+    classNamePrefix: "keller-ui",
+    generateId: (r, s) => s.options.classNamePrefix + "__" + r.key,
+  })
+  .attach();
 
 export { classes };

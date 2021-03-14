@@ -12,7 +12,10 @@
     "jsx": "react",
 
     "outDir": "lib",
-    "rootDir": "src"
+    "rootDir": "src",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
